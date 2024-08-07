@@ -79,6 +79,11 @@ body {
   text-transform: uppercase;
 }
 
+.sticky-top {
+  overflow: hidden;
+}
+
+/* Home */
 .home {
   background-image: url(img/luxa.org-opacity-changed-1158.png);
   background-size: cover;
