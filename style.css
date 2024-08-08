@@ -96,7 +96,9 @@ body {
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
   color: var(--pink);
   font-family: "Sacramento";
   font-size: 5rem;
@@ -186,12 +188,15 @@ body {
 
 /* Story / Timeline */
 .story,
-.gallery {
+.gallery,
+.rsvp,
+.gifts {
   padding-top: 10rem;
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -201,7 +206,9 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.rsvp p,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -310,6 +317,35 @@ body {
   background-color: #f5f5f5;
 }
 
+/* RSVP */
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
+
 /* Media Query */
 /* Extra Large */
 @media (max-width: 1200px) {
@@ -359,6 +395,10 @@ body {
     border-right-width: 14px;
     left: -13px;
     right: auto;
+  }
+
+  .tombol-kirim {
+    margin-top: 25px !important;
   }
 }
 
